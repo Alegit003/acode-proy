@@ -103,8 +103,13 @@ header .hlogo {
 /* SOLUCIONES */
 .soluciones {
     background-color: hwb(0 99% 1%);
-}
 
+}
+.soluciones img{
+width:100px;
+height: 110px;
+
+}
 .soluciones section article {
     display: inline-block;
     justify-content: space-between;
