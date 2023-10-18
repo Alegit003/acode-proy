@@ -91,6 +91,36 @@ header .hlogo {
 
 /* HEADER */
 /* PORTADA IMAGEN (carroulsel Boostrap) */
+
+.carousel p, h5 {
+    color: white;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+}
+
+
+
+.carousel-inner {
+    width: 100%;
+    height: 490px;
+
+}
+
+.carousel-inner img {
+    object-fit: cover;
+
+}
+
 .ini_imagen {
     display: flex;
     background-color: hwb(297 4% 11%);
@@ -180,14 +210,14 @@ header .hlogo {
 /* NOVEDADES main */
 
 
-.novetit{
-   
+.novetit {
+
     display: inline-block;
     width: 100%;
     text-align: center;
     border-bottom: 1px solid black;
 }
-   
+
 .novetit h1 {
     text-align: center;
     padding: 10px;
@@ -229,14 +259,16 @@ header .hlogo {
 
 
 /* FOOTER */
-footer{
+footer {
     padding: 20px;
     background-color: black;
 }
-footer h1{
+
+footer h1 {
     font-size: 30px;
-    text-decoration:underline;
+    text-decoration: underline;
 }
+
 .container-fluid {
 
     background-color: black;
@@ -342,7 +374,7 @@ footer h1{
 
 @media (min-width:768px) {
     .datos-formulario {
-        border:1px solid black;
+        border: 1px solid black;
         box-shadow: none;
     }
 
