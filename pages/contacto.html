@@ -4,80 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
-    
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./favicon1.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    
+
     <title>Ayca Servicios</title>
 </head>
+
 <body>
-
-
     <header>
+
         <div class="menu">
-            <img class="hlogo" src="./img/Loga solo Ayca.png.png" alt="logoo">
-            <nav>
+            <img class="hlogo" src="../img/Loga solo Ayca.png.png" alt="logoo">
+            <nav class="navmenu">
                 <ul>
-                    <li><a href="./index.html"></a>>Home</>
-                    </li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/soluciones.html">Soluciones</a></li>
-                    <li><a href="./pages/politicas.html">Politicas</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li><a href="./index.html" class="active">Inicio</a></li>
+                    <li><a href="./pages/nosotros.html" class="active">Nosotros</a></li>
+                    <li><a href="./pages/soluciones.html" class="active">Soluciones</a></li>
+                    <li><a href="./pages/politicas.html" class="active">Politicas</a></li>
+                    <li><a href="./pages/contacto.html" class="active">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
 
-    <main class="contacto-main">
-        <div class="fomulario"></div>
-        <h1>Completa tus datos para contacto</h1>
+    <main>
+        <section class="container formulari">
 
-        <form action="" class="form-contacto">
+            <div class="datos-formulario">
+                <img src="../img/Formimg.JPG" alt="">
 
-            <h2 class="titulo">Datos personales</h2>
-            <span class="entrada">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre">
-            </span>
-            <span class="entrada">
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido">
-            </span>
-            <span class="entrada">
-                <label for="mail">Mail</label>
-                <input type="email" id="mail">
-            </span>
-            <span class="entrada">
-                <label for="telef">telefono</label>
-                <input type="tel" id="telef">
-            </span>
-            <span class="entrada">
-                <label for="direc">Direccion</label>
-                <input type="text" id="direc">
-            </span>
-            <span class="entrada">
-                <label for="pais">Pais</label>
-                <input type="text" id="pais">
-            </span>
-            <span>
-                <input class="sub" type="submit" value="Enviar">
-            </span>
-        </form>
-        </div>
+                <form action="" class="form-contacto">
+                    <h1>Completa tus datos para contacto</h1>
+
+                    <div class="entrada">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div class="entrada">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido">
+                    </div>
+                    <div class="entrada">
+                        <label for="mail">Mail</label>
+                        <input type="email" id="mail">
+                    </div>
+                    <div class="entrada">
+                        <label for="telef">telefono</label>
+                        <input type="tel" id="telef">
+                    </div>
+                    <div class="entrada">
+                        <label for="direc">Direccion</label>
+                        <input type="text" id="direc">
+                    </div>
+                    <div class="entrada">
+                        <label for="pais">Pais</label>
+                        <input type="text" id="pais">
+                    </div>
+                    <div class="entrada">
+                        <input type="submit" value="Enviar" class="fboton">
+                    </div>
+                </form>
+            </div>
+        </section>
 
     </main>
 
-    <footer class="footer">
-        <div class="conten_foot">
-            <div class="foot-rows">
-                <div class="row">
+    <footer>
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <article class="col-12 col-lg-4">
                     <h1>ubicacion</h1>
                     <div class="mapa">
                         <iframe
@@ -85,9 +89,9 @@
                             width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                </div>
+                </article>
 
-                <div class="row">
+                <article class="col-12 col-lg-4">
                     <div class="contacto">
                         <h1>contacto</h1>
                         <ol>
@@ -95,8 +99,8 @@
                             <li>mail</li>
                         </ol>
                     </div>
-                </div>
-                <div class="row">
+                </article>
+                <article class="col-12 col-lg-4">
                     <div class="politica">
                         <h1>Politicas de calidad</h1>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero exercitationem enim iusto illo
@@ -105,15 +109,17 @@
                         quia
                         eligendi facilis.
                     </div>
-                </div>
+                </article>
             </div>
         </div>
+
+
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
-
-</html>
 
 </html>

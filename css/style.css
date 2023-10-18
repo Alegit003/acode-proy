@@ -67,7 +67,7 @@ header .hlogo {
     color: white;
 }*/
 
-@media (min-width: 400px) {
+@media (min-width: 614px) {
     .menu {
 
         background-color: white;
@@ -108,13 +108,17 @@ header .hlogo {
 
 
 /* SOLUCIONES */
-.soluciones h1{
+.titulosol h1 {
     text-align: center;
 }
+
 .soluciones {
-    background-color: hwb(0 99% 1%);
+    display: flex;
+    justify-content: space-between;
+
 
 }
+
 
 .soluciones img {
     max-width: 150px;
@@ -123,41 +127,31 @@ header .hlogo {
 }
 
 .soluciones section article {
-    display: inline-block;
-    justify-content: space-between;
-    padding: 100px;
-}
-
-.soluciones section h1 {
-    text-align: center;
-    font-size: large;
-    font-size: 30px;
-    color: blueviolet;
-}
-
-.soluciones section h3 {
-    text-align: center;
-    font-size: large;
-    font-style: oblique;
-}
-
-.soluciones section article img {
     width: 100%;
+    padding: 70px;
+
 }
+
+
 
 @media(min-width:1000px) {
-    
-    .soluciones section{
+
+    .soluciones section {
 
         display: flex;
+        width: 100%;
         justify-content: space-between;
-        align-items: center;
-    
+        align-items: stretch;
+
+
+
     }
-    .soluciones section article{
-      
-   
-      padding: 45px;
+
+    .soluciones section article {
+
+
+
+        padding: 45px;
     }
 
 }
@@ -204,144 +198,172 @@ header .hlogo {
         align-items: center;
         gap: 50px;
     }
+}
+
+/*COMNETARIO*/
+/* CTL+K+C */
 
 
-    /*COMNETARIO*/
-    /* CTL+K+C */
+/* FOOTER */
+.container-fluid {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    gap: 10rem;
+}
 
 
-    /* FOOTER */
-    .container-fluid {
 
-        background-color: black;
-        color: white;
-        text-align: center;
+/*SOLUCIONES*/
+
+.soluciones-body {
+    display: inline-block;
+}
+
+.soluciones-main {
+
+    padding: 40px;
+    background-color: rgb(243, 240, 236);
+
+}
+
+.ensayo {
+    width: 29%;
+    height: 500px;
+    background-color: rgb(248, 253, 253);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-inline: 1%;
+    /*margen entre ellos*/
+    overflow: auto;
+
+}
+
+.ensayo-img {
+    width: 100%;
+    /*toma tamaño del padre*/
+    height: 200px;
+}
+
+.ensayo-titulo {
+
+    font-size: 20px;
+
+}
+
+.ensayo.parrafo {
+    font-size: 14px;
+
+
+
+}
+
+.ensayo-img,
+.ensayo-titulo,
+.ensayo.parrafo {
+    margin-bottom: 10px;
+}
+
+/* CONTACTO */
+.formulari{
+    padding: 10px;
+}
+.datos-formulario{
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.datos-formulario .fboton{
+
+background-color: black;
+padding: 1rem 2rem;
+color: white;
+align-self: center;
+margin: 10px;
+border: 0;
+}
+
+.formulari img{
+    display: none;
+
+}
+
+
+
+.entrada {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+
+@media (min-width:768px){
+    .datos-formulario{
+        border: none;
     }
-
-
-
-    /*SOLUCIONES*/
-
-    .soluciones-body {
-        display: inline-block;
+  
+   .formulari img{
+    display:block;
+    max-width: 500px;
+}
+    .datos-formulario{
+      
+        display: flex;
+        flex-direction: row;
     }
+    
+  
+    
+    
 
-    .soluciones-main {
-
-        padding: 40px;
-        background-color: rgb(243, 240, 236);
-
-    }
-
-    .ensayo {
-        width: 29%;
-        height: 500px;
-        background-color: rgb(248, 253, 253);
-        padding: 10px;
-        border-radius: 10px;
-        display: inline-block;
-        margin-inline: 1%;
-        /*margen entre ellos*/
-        overflow: auto;
-
-    }
-
-    .ensayo-img {
-        width: 100%;
-        /*toma tamaño del padre*/
-        height: 200px;
-    }
-
-    .ensayo-titulo {
-
-        font-size: 20px;
-
-    }
-
-    .ensayo.parrafo {
-        font-size: 14px;
+}
 
 
 
-    }
+/* POLITICAS */
 
-    .ensayo-img,
-    .ensayo-titulo,
-    .ensayo.parrafo {
-        margin-bottom: 10px;
-    }
+.politicas-sec {
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+}
 
-    /* CONTACTO */
+.politicas-sec h2 {
+    text-align: center;
+    font-size: 20px;
+}
 
-    .contacto-main {
-        width: 100%;
-        height: 500px;
-    }
+.politicas-sec p {
+    text-align: center;
+    font-size: 15px;
+}
 
-    .formulario {
-        display: inline-block;
-        justify-content: space-between;
-        height: 100px;
+/* NOSOTROS */
+.nosotros-main {
+    width: 100%;
+    height: 500px;
+    background-color: antiquewhite;
+}
 
-    }
+.nos-contenedor section article {
+    padding: 20px;
 
-    .formulario h1 {
-        text-align: center;
-    }
+}
 
-    .form-contacto {
-        background-color: white;
-        width: 800px;
-        border-radius: 8px;
-        padding: 20px 40px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
+.nos-contenedor section article h2 {
+    text-align: center;
+    font-size: 20px;
+}
 
-    .entrada {
-        display: inline-block;
-        padding: 10px 10px;
+.nos-contenedor section article p {
+    text-align: center;
 
-
-    }
-
-    /* POLITICAS */
-
-    .politicas-sec {
-        width: 100%;
-        height: 500px;
-        padding: 10px;
-    }
-
-    .politicas-sec h2 {
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .politicas-sec p {
-        text-align: center;
-        font-size: 15px;
-    }
-
-    /* NOSOTROS */
-    .nosotros-main {
-        width: 100%;
-        height: 500px;
-        background-color: antiquewhite;
-    }
-
-    .nos-contenedor section article {
-        padding: 20px;
-
-    }
-
-    .nos-contenedor section article h2 {
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .nos-contenedor section article p {
-        text-align: center;
-
-    }
+}
