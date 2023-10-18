@@ -107,49 +107,63 @@ header .hlogo {
 
 
 
-/* SOLUCIONES */
+/* SOLUCIONES main */
+.titulosol {
+    border-bottom: 1px solid black;
+
+}
+
 .titulosol h1 {
     text-align: center;
+    padding: 10px;
 }
 
-.soluciones {
+
+.solucionesinisec {
     display: flex;
-    justify-content: space-between;
-
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 
 }
 
-
-.soluciones img {
+.solucionesini img {
     max-width: 150px;
     max-height: 150px;
+    padding: 20px;
 
 }
 
-.soluciones section article {
+
+
+/*.solucionesini section article {
     width: 100%;
     padding: 70px;
 
-}
+}*/
 
 
 
 @media(min-width:1000px) {
-
-    .soluciones section {
-
+    .solucionesinisec {
         display: flex;
-        width: 100%;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: stretch;
-
+        align-items: center;
 
 
     }
 
+    /*.solucionesini  {
+
+        display: flex;
+     
+        justify-content: space-between;
+        align-items: stretch;
+
+    }*/
+
     .soluciones section article {
-
-
 
         padding: 45px;
     }
@@ -162,11 +176,22 @@ header .hlogo {
 
 
 
-/* NOVEDADES */
-.novetit {
-    display: inline;
+/* NOVEDADES main */
+
+
+.novetit{
+   
+    display: inline-block;
+    width: 100%;
     text-align: center;
+    border-bottom: 1px solid black;
 }
+   
+.novetit h1 {
+    text-align: center;
+    padding: 10px;
+}
+
 
 .novedades {
 
@@ -176,8 +201,6 @@ header .hlogo {
     text-align: center;
 
 }
-
-
 
 
 .novevades-text {
@@ -215,7 +238,7 @@ header .hlogo {
 
 
 
-/*SOLUCIONES*/
+/*SOLUCIONES pages*/
 
 .soluciones-body {
     display: inline-block;
@@ -266,30 +289,33 @@ header .hlogo {
     margin-bottom: 10px;
 }
 
-/* CONTACTO */
-.formulari{
+/* CONTACTO pages */
+.formulari {
     padding: 10px;
 }
-.datos-formulario{
+
+.datos-formulario {
     border: 1px solid black;
     box-shadow: 2px 2px 10px;
+    /*para poner sombra*/
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
 }
-.datos-formulario .fboton{
 
-background-color: black;
-padding: 1rem 2rem;
-color: white;
-align-self: center;
-margin: 10px;
-border: 0;
+.datos-formulario .fboton {
+
+    background-color: black;
+    padding: 1rem 2rem;
+    color: white;
+    align-self: center;
+    margin: 10px;
+    border: 0;
 }
 
-.formulari img{
+.formulari img {
     display: none;
 
 }
@@ -305,30 +331,31 @@ border: 0;
 }
 
 
-@media (min-width:768px){
-    .datos-formulario{
+@media (min-width:768px) {
+    .datos-formulario {
         border: none;
     }
-  
-   .formulari img{
-    display:block;
-    max-width: 500px;
-}
-    .datos-formulario{
-      
+
+    .formulari img {
+        display: block;
+        max-width: 500px;
+    }
+
+    .datos-formulario {
+
         display: flex;
         flex-direction: row;
     }
-    
-  
-    
-    
+
+
+
+
 
 }
 
 
 
-/* POLITICAS */
+/* POLITICAS pages */
 
 .politicas-sec {
     width: 100%;
@@ -346,7 +373,7 @@ border: 0;
     font-size: 15px;
 }
 
-/* NOSOTROS */
+/* NOSOTROS pages */
 .nosotros-main {
     width: 100%;
     height: 500px;
