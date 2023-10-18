@@ -39,12 +39,13 @@ img {
 
 header {
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(90, 85, 85);
+    background-color: white
 }
 
 header .hlogo {
     padding: 5px;
-    height: 100px;
+    max-height: 70px;
+    align-self: center;
 
 }
 
@@ -54,7 +55,7 @@ header .hlogo {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: gray;
+    background-color: white;
 }
 
 .active {
@@ -228,12 +229,20 @@ header .hlogo {
 
 
 /* FOOTER */
+footer{
+    padding: 20px;
+    background-color: black;
+}
+footer h1{
+    font-size: 30px;
+    text-decoration:underline;
+}
 .container-fluid {
 
     background-color: black;
     color: white;
     text-align: center;
-    gap: 10rem;
+    gap: 40rem;
 }
 
 
@@ -333,12 +342,13 @@ header .hlogo {
 
 @media (min-width:768px) {
     .datos-formulario {
-        border: none;
+        border:1px solid black;
+        box-shadow: none;
     }
 
     .formulari img {
         display: block;
-        max-width: 500px;
+        max-width: 400px;
     }
 
     .datos-formulario {
