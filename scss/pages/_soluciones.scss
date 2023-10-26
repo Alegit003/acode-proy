@@ -1,0 +1,36 @@
+.soluciones-main {
+    width: 100px;
+        display:flex;
+        padding: 40px;
+        background-color: rgb(243, 240, 236);
+    
+    }
+    .card-solucion{
+    
+        width: 35px;
+    
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        /*toma tamaño del padre*/
+        height: 100px;
+    }
+    }
+    .card-titulo {
+    
+        font-size: 20px;
+    
+    }
+    
+    .card.parrafo {
+        font-size: 14px;
+    
+    
+    
+    }
+    
+    .ensayo-img,
+    .ensayo-titulo,
+    .ensayo.parrafo {
+        margin-bottom: 10px;
+    }

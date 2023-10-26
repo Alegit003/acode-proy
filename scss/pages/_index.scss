@@ -1,0 +1,148 @@
+.carousel p, h5 {
+    color: white;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+}
+
+
+
+.carousel-inner {
+    width: 100%;
+    height: 490px;
+
+}
+
+.carousel-inner img {
+    object-fit: cover;
+
+}
+
+.ini_imagen {
+    display: flex;
+    background-color: hwb(297 4% 11%);
+    background-position: center;
+    width: 100%;
+    height: 450px;
+
+}
+
+.titulosol {
+    border-bottom: 1px solid black;
+
+}
+
+.titulosol h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+
+.solucionesinisec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.solucionesini img {
+    max-width: 150px;
+    max-height: 150px;
+    padding: 20px;
+
+}
+
+
+
+/*.solucionesini section article {
+    width: 100%;
+    padding: 70px;
+
+}*/
+
+
+
+@media(min-width:1200px) {
+    .solucionesinisec {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    /*.solucionesini  {
+
+        display: flex;
+     
+        justify-content: space-between;
+        align-items: stretch;
+
+    }*/
+
+    .soluciones section article {
+
+        padding: 45px;
+    }
+
+}
+
+.ini-img {
+    width: 100%;
+    object-fit: cover;
+
+}
+.novetit {
+
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.novetit h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+
+.novedades {
+
+    padding: 1rem;
+    display: inline-block;
+    gap: 10px;
+    text-align: center;
+
+}
+
+
+.novevades-text {
+    text-align: center;
+
+}
+
+.novedades-text p {
+    padding: 20px;
+}
+
+/* min-widh, se vaya activando a medida que vaya agrandando */
+@media(min-width:1000px) {
+    .novedades {
+        background-color: yellow;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 50px;
+    }
+}
