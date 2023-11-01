@@ -3,7 +3,7 @@
 }
 
 .datos-formulario {
-    border: 1px solid black;
+    border:$border-estilo;
     box-shadow: 2px 2px 10px;
     /*para poner sombra*/
     padding: 1rem;
@@ -38,8 +38,8 @@
 
 }
 
+@include mq-fm{
 
-@media (min-width:768px) {
     .datos-formulario {
         border: 1px solid black;
         box-shadow: none;
@@ -58,3 +58,4 @@
 
 
 }
+

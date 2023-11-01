@@ -1,36 +1,62 @@
+
+
 .soluciones-main {
-    width: 100px;
-        display:flex;
-        padding: 40px;
-        background-color: rgb(243, 240, 236);
-    
-    }
-    .card-solucion{
-    
-        width: 35px;
-    
-    &__img {
-        object-fit: cover;
-        width: 100%;
-        /*toma tamaño del padre*/
-        height: 100px;
-    }
-    }
-    .card-titulo {
-    
-        font-size: 20px;
-    
-    }
-    
-    .card.parrafo {
-        font-size: 14px;
-    
-    
-    
-    }
-    
-    .ensayo-img,
-    .ensayo-titulo,
-    .ensayo.parrafo {
-        margin-bottom: 10px;
-    }
+    background-color:$color_fondo;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 80px;
+
+}
+
+
+.card
+
+{
+   border: 1r solid black;
+    padding: 0px;
+    width: 300px;
+    max-height: 400px;
+background-color: red;
+
+
+&-img-top{
+padding: 10px;
+    object-fit: cover;
+    max-width: 150px;
+    height: auto;
+margin-left: 50px;
+}
+
+ &-title {
+font-size: 19px;
+font-style: inherit;
+color: black;
+
+&-text{
+    font-size: 5px;
+
+}
+
+}
+}
+
+.card-titulo {
+
+    font-size: 20px;
+
+}
+
+.card.parrafo {
+    font-size: 14px;
+
+
+
+}
+
+.ensayo-img,
+.ensayo-titulo,
+.ensayo.parrafo {
+    margin-bottom: 10px;
+}

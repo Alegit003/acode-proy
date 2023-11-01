@@ -11,9 +11,7 @@ header .hlogo {
 }
 
 .menu {
-
-
-    flex-direction: row;
+ flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: white;
@@ -28,24 +26,27 @@ header .hlogo {
 
     color: white;
 }*/
-
-@media (min-width: 614px) {
+@include mq-nav{
+    
     .menu {
 
-        background-color: white;
-        color: black;
-        display: flex;
-        padding: 1rem;
-        align-items: center;
-        font-size: 20px;
+    background-color: white;
+    color: black;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    font-size: 20px;
 
 
-    }
-
-    .navmenu ul {
-        width: 550px;
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-    }
 }
+
+.navmenu ul {
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+}
+
+
+
