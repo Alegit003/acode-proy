@@ -5,7 +5,7 @@ $sombra: 2px 2px 10px grey;
 $placeholder-opacity-max: .5;
 $placeholder-opacity-min: .2;
 $color_principal: rgb(240 9 9);
-
+$bordernove:1px;
 
 
 * {
@@ -32,6 +32,7 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
+
 
 .botonn {
 
@@ -60,5 +61,14 @@ img {
     @media(min-width: 614px) {
         @content;
 
+    }
+}
+@mixin mq-solgal{
+    @media (min-width: 768px){
+    @content;
+}}
+@mixin mq-solgal2{
+    @media (min-width: 1200px) {
+        @content;
     }
 }
