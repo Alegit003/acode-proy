@@ -1,36 +1,47 @@
 header {
+   
     font-family: 'Montserrat', sans-serif;
     background-color: white
 }
 
 header .hlogo {
-    padding: 5px;
+  
     max-height: 70px;
     align-self: center;
 
 }
+.nav-prev{
+    height: 10px;
+    background-color: red;
+}
 
 .menu {
+    
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: white;
+
 }
 
 .active {
-    text-decoration: underline;
+
+    color: black;
+}
+
+a:active{
+    text-decoration:underline;
+
 }
 
 
-/* header nav ul li a { 
 
-    color: white;
-}*/
+
 @include mq-nav {
 
     .menu {
 
-        background-color: white;
+        background-color:$color_nav;
         color: black;
         display: flex;
         padding: 1rem;

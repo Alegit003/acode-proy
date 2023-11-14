@@ -22,6 +22,14 @@ img {
   max-height: 100%;
 }
 
+.titulos {
+  color: black;
+  font-style: inherit;
+  font-size: 30px;
+  padding: 20px;
+  text-shadow: none;
+}
+
 .botonn {
   background-color: black;
   padding: 1rem 2rem;
@@ -107,9 +115,13 @@ header {
 }
 
 header .hlogo {
-  padding: 5px;
   max-height: 70px;
   align-self: center;
+}
+
+.nav-prev {
+  height: 10px;
+  background-color: red;
 }
 
 .menu {
@@ -120,16 +132,16 @@ header .hlogo {
 }
 
 .active {
+  color: black;
+}
+
+a:active {
   text-decoration: underline;
 }
 
-/* header nav ul li a { 
-
-    color: white;
-}*/
 @media (min-width: 614px) {
   .menu {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.705);
     color: black;
     display: flex;
     padding: 1rem;
@@ -143,18 +155,44 @@ header .hlogo {
     gap: 1rem;
   }
 }
-.carousel p, h5 {
-  color: white;
+.novedades {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.novedades-text {
+  text-align: start;
+  color: black;
+  font-weight: 900;
 }
 
-.carousel-item {
-  height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+/* min-widh, se vaya activando a medida que vaya agrandando */
+@media (min-width: 1200px) {
+  .novedades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+  }
+}
+.titulosol {
+  text-align: center;
+  padding: 100px;
+  color: black;
+  font-style: inherit;
+  font-size: 30px;
+}
+
+.card {
+  width: var(--max);
+}
+
+.card-img-top {
+  max-height: 275px;
+  object-fit: fill;
 }
 
 .carousel-inner {
@@ -166,102 +204,6 @@ header .hlogo {
   object-fit: cover;
 }
 
-.ini_imagen {
-  display: flex;
-  background-color: hwb(297 4% 11%);
-  background-position: center;
-  width: 100%;
-  height: 450px;
-}
-
-.titulosol {
-  border-bottom: 1px solid black;
-}
-
-.titulosol h1 {
-  text-align: center;
-  padding: 10px;
-}
-
-.solucionesinisec {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
-
-.solucionesini img {
-  max-width: 150px;
-  max-height: 150px;
-  padding: 20px;
-}
-
-/*.solucionesini section article {
-    width: 100%;
-    padding: 70px;
-
-}*/
-@media (min-width: 1200px) {
-  .solucionesinisec {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  /*.solucionesini  {
-
-      display: flex;
-
-      justify-content: space-between;
-      align-items: stretch;
-
-  }*/
-  .soluciones section article {
-    padding: 45px;
-  }
-}
-.ini-img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.novetit {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid black;
-}
-
-.novetit h1 {
-  text-align: center;
-  padding: 10px;
-}
-
-.novedades {
-  padding: 1rem;
-  display: inline-block;
-  gap: 10px;
-  text-align: center;
-}
-
-.novevades-text {
-  text-align: center;
-}
-
-.novedades-text p {
-  padding: 20px;
-}
-
-/* min-widh, se vaya activando a medida que vaya agrandando */
-@media (min-width: 1000px) {
-  .novedades {
-    background-color: yellow;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 50px;
-  }
-}
 .nosotros-main {
   width: 100%;
   height: 500px;
@@ -273,6 +215,7 @@ header .hlogo {
 }
 
 .nos-contenedor section article h2 {
+  font-style: inherit;
   text-align: center;
   font-size: 20px;
 }
@@ -301,11 +244,14 @@ header .hlogo {
   background-color: white;
 }
 
-.card {
-  color: black;
-}
 .card-body {
   padding: 20px;
+}
+.card-title {
+  font-size: 25px;
+}
+.card-text {
+  font-size: 16px;
 }
 
 .galeria {
