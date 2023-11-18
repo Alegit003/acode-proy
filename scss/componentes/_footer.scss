@@ -2,11 +2,12 @@ footer {
     color: white;
     padding: 20px;
     background-color: black;
+    text-align: c;
 }
 
-footer h1 {
-    font-size: 30px;
-    text-decoration: underline;
+footer h4 {
+    font-size: 35px;
+
 }
 
 .container-fluid {
@@ -14,5 +15,47 @@ footer h1 {
     background-color: black;
     color: white;
     text-align: center;
-    gap: 40rem;
+    gap: 70rem;
+}
+
+.ubicacion{
+    padding: 10px;
+
+}
+
+.contacto{
+ 
+padding: 10px;
+
+}
+.flexContainer {
+    display:flex;
+    align-items:center;
+  }
+  
+  .span {
+    margin:0 0 4px 4px;  
+  }
+  .icon {
+   
+    font-size:15px;
+  }
+.iconoimg{
+    width: 2.5em;
+    height: 2.5em;
+    border: 0.2em solid transparent;
+    border-radius: 0.0625em;
+    display: inline-block;
+    background: transparent; 
+    font-size: 1em;
+    font-style: normal;
+}
+.certificado{
+padding: 10px;
+
+}
+.certificado-img{
+
+   max-width: 230px;
+   max-height: 110px;
 }

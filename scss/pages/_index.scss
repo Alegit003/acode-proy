@@ -1,63 +1,15 @@
-.novedades {
-    margin-top : 20px;
-    margin-bottom : 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-
-
-    &-text {
-        text-align: start;
-        color: black;
-        font-weight: 900;
-
-
-    }
+.untitulo{
+    margin-top:0;
+    margin-bottom: 0;
+padding: 0;
 }
-
-/* min-widh, se vaya activando a medida que vaya agrandando */
-@media(min-width:1200px) {
-    .novedades {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 70px;
-
-
-    }
-}
-
-.titulosol {
-
-    text-align: center;
-    padding: 100px;
-    color: black;
-    font-style: inherit;
-    font-size: 30px;
-
-
-}
-
-
-.card {
-    width: var(--max)
-}
-
-.card-img-top {
-    max-height: 275px;
-    object-fit: fill;
-}
-
-
 
 
 
 
 .carousel-inner {
     width: 100%;
-    height: 490px;
+    max-height: 100%;
 
 }
 
@@ -65,3 +17,48 @@
     object-fit: cover;
 
 }
+
+
+
+
+
+
+.card {
+    width: var(--max)
+}
+
+
+.card-img-top {
+    max-height: 230px;
+    object-fit: fill;
+}
+.card-title{
+    text-decoration: dashed;
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+.titulosol {
+
+    text-align: center;
+    padding: 60px;
+    color: black;
+    font-style: inherit;
+}
+
+.titulosol h3{
+    font-size: 20px;
+    color: black;
+}
+
+
+
+

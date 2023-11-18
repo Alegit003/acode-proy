@@ -1,7 +1,8 @@
 header {
    
     font-family: 'Montserrat', sans-serif;
-    background-color: white
+    background-color: white;
+  
 }
 
 header .hlogo {
@@ -16,11 +17,13 @@ header .hlogo {
 }
 
 .menu {
-    
+
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    position: fixed;
+z-index: 100;
 
 }
 

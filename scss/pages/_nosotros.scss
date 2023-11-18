@@ -1,7 +1,7 @@
 .nosotros-main {
-    width: 100%;
-    height: 500px;
-    background-color: antiquewhite;
+    margin-top: 60px;
+padding: 50px;
+    background-color: rgb(246, 242, 238);
 }
 
 .nos-contenedor section article {
@@ -18,4 +18,34 @@
 .nos-contenedor section article p {
     text-align: center;
 
+}
+.novedades {
+    margin-top : 20px;
+    margin-bottom : 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: none;
+
+
+
+    &-text {
+        text-align: start;
+        color: black;
+        font-weight: 900;
+
+
+    }
+}
+/* min-widh, se vaya activando a medida que vaya agrandando */
+@media(min-width:1200px) {
+    .novedades {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 70px;
+
+
+    }
 }
