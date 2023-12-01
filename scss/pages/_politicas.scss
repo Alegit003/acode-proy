@@ -1,12 +1,28 @@
+.poli-lista{
+    list-style-type:square;
 
+}
 
+.poli-lista{
+    padding:2rem;
+}
 
 .empresa{
-    padding: 20px;
+    padding: 40px;
     text-decoration:solid;
    
 }
 
 .politi{
-    margin-top: 80px;
+    margin-top: 200px;
+}
+
+@include mq-poli {
+
+
+    .politi{
+      
+       margin-top: 100px;
+
+    }
 }

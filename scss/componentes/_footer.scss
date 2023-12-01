@@ -1,61 +1,80 @@
 footer {
-    color: white;
-    padding: 20px;
-    background-color: black;
-    text-align: c;
+  color: white;
+  padding: 20px;
+  background-color: black;
+  margin-top: 1rem;
 }
 
 footer h4 {
-    font-size: 35px;
+  font-size: 20px;
+
+
+}
+footer p{
+font-size: 13px;
 
 }
 
 .container-fluid {
 
-    background-color: black;
-    color: white;
-    text-align: center;
-    gap: 70rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  gap: 70rem;
 }
 
-.ubicacion{
-    padding: 10px;
+.ubicacion {
+  padding: 10px;
 
 }
 
-.contacto{
- 
-padding: 10px;
+.contacto {
+
+  padding: 0px;
 
 }
+
 .flexContainer {
-    display:flex;
-    align-items:center;
-  }
-  
-  .span {
-    margin:0 0 4px 4px;  
-  }
-  .icon {
-   
-    font-size:15px;
-  }
-.iconoimg{
-    width: 2.5em;
-    height: 2.5em;
-    border: 0.2em solid transparent;
-    border-radius: 0.0625em;
-    display: inline-block;
-    background: transparent; 
-    font-size: 1em;
-    font-style: normal;
+  display: flex;
+  align-items: center;
 }
-.certificado{
-padding: 10px;
+
+.span {
+  margin: 0 0 4px 4px;
+}
+
+.icon {
+
+  font-size: 15px;
 
 }
-.certificado-img{
 
-   max-width: 230px;
-   max-height: 110px;
+.iconoimg {
+  width: 2.5em;
+  height: 2.5em;
+  border: 0.2em solid transparent;
+  border-radius: 0.0625em;
+
+  background: transparent;
+
+}
+
+.iconoimgi {
+  width: 2.5rem;
+  height: 2.5em;
+  border: 0.2em solid transparent;
+  border-radius: 0;
+
+
+}
+
+.certificado {
+  padding: 0px;
+
+}
+
+.img-fluid {
+
+  max-width: 8.5rem;
+  max-height: 7.5rem;
 }

@@ -1,7 +1,7 @@
 .nosotros-main {
     margin-top: 60px;
 padding: 50px;
-    background-color: rgb(246, 242, 238);
+    background-color: white
 }
 
 .nos-contenedor section article {
@@ -36,6 +36,25 @@ padding: 50px;
 
 
     }
+    &-img{
+        background-color: white;
+        width: 100%;
+    }
+}
+.vision-list{
+    list-style-type: square;
+}
+
+.nos-articulo h2{
+
+    font-style: oblique;
+
+}
+
+.imglogo{
+    max-width: 100%;
+    height: 150px;
+object-fit:cover;
 }
 /* min-widh, se vaya activando a medida que vaya agrandando */
 @media(min-width:1200px) {
@@ -47,5 +66,11 @@ padding: 50px;
         gap: 70px;
 
 
+    }
+    .imglogo img{
+        display: inline;
+      max-width: 300px;
+    height: 150px;
+object-fit:cover;
     }
 }

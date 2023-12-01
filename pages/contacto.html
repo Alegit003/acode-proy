@@ -23,59 +23,76 @@
         </div>
 
         <div class="menu">
-           <a href="../index.html"><img class="hlogo" src="../img/Loga solo Ayca.png.png" alt="logo" ><a href="../index.html"></a>
-            <nav class="navmenu">
-                <ul>
-                    <li><a href="../index.html" class="active">Inicio</a></li>
-                    <li><a href="./nosotros.html" class="active">Nosotros</a></li>
-                    <li><a href="./soluciones.html" class="active">Soluciones</a></li>
-                    <li><a href="./politicas.html" class="active">Politicas</a></li>
-                    <li><a href="./contacto.html" class="active">Contacto</a></li>
-                </ul>
-            </nav>
+            <a href="../index.html"><img class="hlogo" src="../img/Loga solo Ayca.png.png" alt="logo"><a
+                    href="../index.html"></a>
+                <nav class="navmenu">
+                    <ul>
+                        <li><a href="../index.html" class="active">Inicio</a></li>
+                        <li><a href="./nosotros.html" class="active">Nosotros</a></li>
+                        <li><a href="./soluciones.html" class="active">Soluciones</a></li>
+                        <li><a href="./politicas.html" class="active">Politicas</a></li>
+                        <li><a href="./contacto.html" class="active">Contacto</a></li>
+                    </ul>
+                </nav>
         </div>
     </header>
 
 
-    <main>
-        <section class="container formulari">
+    <main class="formulario container">
+        <section class="formulari container">
 
-            <div class="datos-formulario">
-                <img src="../img/Formimg.JPG" alt="imagen-end">
+            <h1 class="form-tit">Completa tus datos para contacto</h1>
+            <form action="enviar.php"  method="post" class="form-contacto">
+                <div class="row p-5">
+                    <div class="col-12 col-lg-4">
+                        <div class="entrada">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre">
+                        </div>
 
-                <form action="" class="form-contacto">
-                    <h1>Completa tus datos para contacto</h1>
+                        <div class="entrada">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="entrada">
+                            <label for="mail">Mail</label>
+                            <input type="email" id="mail">
+                        </div>
+                        <div class="entrada">
+                            <label for="telef">telefono</label>
+                            <input type="tel" id="telef">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="entrada">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa">
+                        </div>
 
-                    <div class="entrada">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre">
+
+                        <div class="entrada">
+                            <label for="pais">Pais</label>
+                            <input type="text" id="pais">
+                        </div>
                     </div>
-                    <div class="entrada">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido">
-                    </div>
-                    <div class="entrada">
-                        <label for="mail">Mail</label>
-                        <input type="email" id="mail">
-                    </div>
-                    <div class="entrada">
-                        <label for="telef">telefono</label>
-                        <input type="tel" id="telef">
-                    </div>
-                    <div class="entrada">
-                        <label for="direc">Direccion</label>
-                        <input type="text" id="direc">
-                    </div>
-                    <div class="entrada">
-                        <label for="pais">Pais</label>
-                        <input type="text" id="pais">
-                    </div>
-                    <div class="entrada">
-                        <input type="submit" value="Enviar" class="botonn">
-                    </div>
-                </form>
-            </div>
+                </div>
+
+                <div class="row p-5">
+                
+                    <label for="comentario">Su Mensaje</label>
+                    <textarea name="comentario" id="comentario" cols="30" rows="6"></textarea>
+            
+                </div>
+                <div class="entrada">
+                    <input type="submit" value="Enviar" class="botonn">
+                </div>
+
+            </form>
+
         </section>
+
 
     </main>
 
@@ -85,8 +102,8 @@
             <div class="row p-5 p-lg-0">
 
                 <article class="col-12 col-lg-4">
-                    <div class="ubicacion">
-                        <h4>ubicacion</h4>
+                    <div class="Ubicacion">
+                        <h4>Ubicacion</h4>
                         <P> Sede central: Abasto, Buenos AIres</P>
                         <p>Base: Las heras y Caleta olivia, Santa Cruz</p>
 
@@ -96,22 +113,44 @@
                 <article class="col-12 col-lg-4">
                     <div class="contacto">
                         <h4>Contacto</h4>
-                        <div class="flexContainer">
+                        <div class="flex Container ">
+                            <div>
+                                <span class=" icon">
+                                    <img class="iconoimg" src="../img/iconos/—Pngtree—mail icon_4436766.png"
+                                        alt="icono-mail">
+                                </span>
+                                <span> contacto@aycaservicios.net
+                                </span>
+
+                            </div>
+
+
                             <div>
                                 <span class="icon">
-                                    <img class="iconoimg" src="../img/iconos/—Pngtree—mail icon_4436766.png" alt="icono-mail">
-                                </span></div>
-                            <div class="span">contacto@aycaservicios.net</div>
+                                    <img class="iconoimgi"
+                                        src="../img/iconos/—Pngtree—telephone icons on white background_5221271.png"
+                                        alt="icono-cel">
+                                </span>
+                                <span>+54 9 2215 75-4429
+                                </span>
+
+                            </div>
                         </div>
+                    </div>
+
                 </article>
+
+
+
+
                 <article class="col-12 col-lg-4">
                     <div class="certificado">
                         <h4>Normas de Calidad </h4>
                         <p>Ayca Servicios Generales certificada desde año 2017 bajo normas ISO 9001:2015 y desarrollando
                             sus actividades dentro de un Sistema integrado de Gestión (SGI)
-                            con un estricto cumplimiento de la normativa ISO 45001:2018</p>
+                        </p>
                         <div class="certificado-img">
-                            <img src="../img/certificado.png" alt="certificado-calidad" class="img-fluid">
+                            <img src="../img/certificado.jpg" alt="certificado-calidad" class="img-fluid">
                         </div>
                     </div>
                 </article>

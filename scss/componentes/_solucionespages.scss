@@ -1,0 +1,49 @@
+.solupages {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: none;
+    background-color: white;
+    
+
+    &-titulos {
+        padding: 15px;
+
+    }
+
+    &-text {
+        color: black;
+
+    }
+    &-img{
+        margin-top: 20px;
+    }
+}
+
+.pat-items{
+ list-style-type: square;
+
+   
+}
+
+
+@media(min-width:1200px) {
+    .solupages {
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+        padding:5px ;
+
+
+    }
+}
+
+@include mq-solp{
+    .solupages{
+        margin-top: 100px;
+
+    }
+}
